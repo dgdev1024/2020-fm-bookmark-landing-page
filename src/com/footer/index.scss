@@ -1,0 +1,60 @@
+@import "../../global.scss";
+
+.footer {
+  background-color: $color-very-dark-blue;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+    align-items: center;
+    padding: 24px 0px;
+
+    @media #{$screen-medium} {
+      grid-template-columns: auto 1fr auto;
+      justify-items: start;
+    }
+  }
+
+  &__logo {
+    @include scale-logo-width(24px);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$screen-medium} {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    margin: 8px 0px;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    @media #{$screen-medium} {
+      margin: 0px 8px;
+    }
+  }
+
+  &__social-link {
+    margin: 0px 16px;
+
+    .social-svg__path {
+      transition: $time-transition-normal;
+    }
+
+    &--facebook:hover .social-svg__path {
+      fill: $color-facebook-blue;
+    }
+
+    &--twitter:hover .social-svg__path {
+      fill: $color-twitter-blue;
+    }
+  }
+}
