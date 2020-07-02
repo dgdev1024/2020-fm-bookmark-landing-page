@@ -10,12 +10,8 @@
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0px auto;
-
-  @media #{$screen-medium} {
-    width: 90%;
-  }
 
   @media #{$screen-large} {
     width: 85%;
@@ -30,8 +26,9 @@
 .heading {
   margin: 8px 0px;
   font-size: 1em;
+  font-weight: $font-weight-bold;
   color: $color-heading-light;
-  line-height: 1.5em;
+  line-height: 1.2em;
   text-align: center;
 
   @media #{$screen-medium} {
@@ -44,6 +41,14 @@
 
   &--small {
     font-size: 1.5em;
+
+    @media #{$screen-medium} {
+      font-size: 1.75em;
+    }
+
+    @media #{$screen-large} {
+      font-size: 2em;
+    }
   }
 
   &--center {
@@ -76,6 +81,10 @@
   &--white {
     color: $color-light-grayish-blue;
   }
+
+  &--small {
+    font-size: 0.75em;
+  }
 }
 
 .button {
@@ -83,6 +92,7 @@
   padding: 16px 8px;
   background-color: transparent;
   color: $color-heading-light;
+  border: none;
 
   &:hover {
     cursor: pointer;

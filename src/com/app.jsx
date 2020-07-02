@@ -3,6 +3,7 @@
  */
 
 import React from "react";
+import CtaSection from "./cta-section";
 import Footer from "./footer";
 import { useLocalStorage } from "../hooks/use-local-storage";
 
@@ -12,6 +13,7 @@ const App = () => {
 
   return (
     <main className={`main ${darkMode && "main--dark"}`}>
+      <CtaSection />
       <Footer />
     </main>
   );

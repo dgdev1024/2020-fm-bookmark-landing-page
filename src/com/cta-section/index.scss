@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.cta {
+  padding: 32px 0px;
+  background-color: $color-soft-blue;
+
+  &__text {
+    max-width: 500px;
+    margin: 0px auto;
+    padding-top: 24px;
+    font-size: 0.8em !important;
+    color: $color-white !important;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+
+    @media #{$screen-medium} {
+      font-size: 0.9em !important;
+    }
+
+    @media #{$screen-large} {
+      font-size: 1em !important;
+    }
+  }
+
+  &__heading {
+    max-width: 500px;
+    margin: 8px auto !important;
+    color: $color-white !important;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 16px 0px;
+
+    @media #{$screen-medium} {
+      grid-template-columns: auto 160px;
+      justify-items: start;
+    }
+  }
+
+  &__input-element {
+    width: 100%;
+
+    .cta__input {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 4px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .cta__input-error {
+      display: none;
+    }
+  }
+
+  &__input-element--error {
+    .cta__input {
+      padding: 10px 14px;
+      background-image: url("../../img/icon-error.svg");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      color: $color-soft-red;
+      border: 2px solid $color-soft-red;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta__input-error {
+      display: block;
+      margin-top: -4px;
+      padding: 8px 12px 6px;
+      background-color: $color-soft-red;
+      color: $color-white;
+      font-size: 0.75em;
+      font-weight: $font-weight-bold;
+      font-style: italic;
+      border-radius: 0px 0px 4px 4px;
+    }
+  }
+
+  .cta__submit-button {
+    align-self: start;
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9em;
+    font-weight: $font-weight-bold;
+    background-color: $color-soft-red;
+    color: $color-white;
+    border-radius: 4px;
+    transition-property: color, background-color;
+    transition-duration: $time-transition-normal;
+
+    &:hover {
+      padding: 10px;
+      background-color: $color-white;
+      color: $color-soft-red;
+      border: 2px solid $color-soft-red;
+    }
+  }
+}
