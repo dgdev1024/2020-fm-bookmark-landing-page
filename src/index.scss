@@ -51,6 +51,10 @@
     }
   }
 
+  &--left {
+    text-align: left;
+  }
+
   &--center {
     @media #{$screen-medium} {
       text-align: center;
@@ -72,6 +76,10 @@
     text-align: left;
   }
 
+  &--left {
+    text-align: left;
+  }
+
   &--center {
     @media #{$screen-medium} {
       text-align: center;
@@ -83,16 +91,21 @@
   }
 
   &--small {
+    font-size: 0.825em;
+  }
+
+  &--smaller {
     font-size: 0.75em;
   }
 }
 
 .button {
   display: block;
-  padding: 16px 8px;
+  padding: 16px;
   background-color: transparent;
   color: $color-heading-light;
   border: none;
+  border-radius: 4px;
 
   &:hover {
     cursor: pointer;

@@ -1,0 +1,26 @@
+@import "../../global.scss";
+
+.faq {
+  background-color: $color-background-light;
+  padding: 96px 0px;
+
+  &__container {
+    max-width: 640px !important;
+  }
+
+  &__heading {
+    padding-bottom: 12px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0px auto;
+    padding: 16px 24px !important;
+    font-size: 0.9em;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.main--dark .faq {
+  background-color: $color-background-dark;
+}
