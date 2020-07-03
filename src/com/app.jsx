@@ -3,6 +3,7 @@
  */
 
 import React from "react";
+import FeaturesSection from "./features-section";
 import DownloadSection from "./download-section";
 import FaqSection from "./faq-section";
 import CtaSection from "./cta-section";
@@ -15,6 +16,7 @@ const App = () => {
 
   return (
     <main className={`main ${darkMode && "main--dark"}`}>
+      <FeaturesSection />
       <DownloadSection />
       <FaqSection />
       <CtaSection />

@@ -24,7 +24,7 @@
 }
 
 .heading {
-  margin: 8px 0px;
+  padding: 8px 0px;
   font-size: 1em;
   font-weight: $font-weight-bold;
   color: $color-heading-light;
@@ -212,6 +212,16 @@
 
   .button {
     color: $color-heading-dark;
+
+    &--blue {
+      background-color: $color-very-dark-blue;
+
+      &:hover {
+        background-color: $color-heading-dark;
+        color: $color-very-dark-blue;
+        border-color: $color-very-dark-blue;
+      }
+    }
 
     &--light-dark {
       background-color: $color-button-default-background-dark;

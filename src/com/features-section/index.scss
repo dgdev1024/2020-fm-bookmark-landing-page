@@ -1,0 +1,41 @@
+@import "../../global.scss";
+
+.features {
+  position: relative;
+
+  &__caption {
+    max-width: 640px;
+    margin: 0px auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    width: 85%;
+    height: 28%;
+    background-color: $color-soft-blue;
+    border-radius: 0px 50% 50% 0px;
+    z-index: 0;
+
+    @media #{$screen-medium} {
+      bottom: 10%;
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.main--dark .features {
+  background-color: $color-background-dark;
+
+  &::before {
+    background-color: $color-very-dark-blue;
+  }
+}

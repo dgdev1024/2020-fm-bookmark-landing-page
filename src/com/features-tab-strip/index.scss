@@ -1,0 +1,72 @@
+@import "../../global.scss";
+
+.features-tab-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media #{$screen-medium} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px 0px;
+    border-bottom: 1px solid $color-text-light;
+    color: $color-text-light;
+    transition: $time-transition-normal;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-black;
+    }
+
+    &:first-child {
+      border-top: 1px solid $color-text-light;
+
+      @media #{$screen-medium} {
+        border-top: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      width: 0px;
+      height: 0px;
+      background-color: $color-soft-red;
+      transition-property: left, width;
+      transition-duration: $time-transition-normal;
+    }
+
+    &--active {
+      font-weight: $font-weight-bold;
+      color: $color-black;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 25%;
+        width: 50%;
+        height: 4px;
+        background-color: $color-soft-red;
+      }
+    }
+  }
+}
+
+.main--dark .features-tab-strip {
+  &__tab--active {
+    color: $color-white;
+  }
+
+  &__tab:hover {
+    color: $color-white;
+  }
+}

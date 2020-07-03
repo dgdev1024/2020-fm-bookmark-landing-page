@@ -41,3 +41,8 @@
     font-weight: $font-weight-bold;
   }
 }
+
+.main--dark .download-card {
+  background-color: $color-background-two-dark;
+  box-shadow: 4px 8px 12px hsla(0, 0, 40%, 0.15);
+}
