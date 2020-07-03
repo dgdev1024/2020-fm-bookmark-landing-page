@@ -1,0 +1,85 @@
+@import "../../global.scss";
+
+.hero {
+  position: relative;
+  padding: 128px 0px;
+  background-color: $color-background-light;
+  z-index: 1;
+  overflow: hidden;
+
+  @media #{$screen-medium} {
+    padding: 160px 0px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 55%;
+    right: 0px;
+    width: 75%;
+    height: 30%;
+    background-color: $color-soft-blue;
+    border-radius: 50% 0px 0px 50%;
+    z-index: -1;
+
+    transition: $time-transition-normal;
+
+    @media #{$screen-medium} {
+      right: -5%;
+      bottom: 25%;
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "caption";
+    gap: 32px;
+    max-width: 480px;
+
+    @media #{$screen-medium} {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "caption image";
+      gap: 16px;
+      align-items: center;
+      max-width: none;
+    }
+  }
+
+  &__image {
+    grid-area: image;
+    width: 100%;
+
+    @media #{$screen-medium} {
+      align-self: start;
+    }
+  }
+
+  &__caption {
+    grid-area: caption;
+  }
+
+  &__text {
+    padding: 16px 0px 32px;
+  }
+
+  &__button-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    @media #{$screen-medium} {
+      max-width: 400px;
+    }
+  }
+}
+
+.main--dark .hero {
+  background-color: $color-background-dark;
+
+  &::before {
+    background-color: $color-very-dark-blue;
+  }
+}

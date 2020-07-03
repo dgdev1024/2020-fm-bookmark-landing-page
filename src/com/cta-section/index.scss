@@ -90,7 +90,7 @@
   .cta__submit-button {
     align-self: start;
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     font-size: 0.9em;
     font-weight: $font-weight-bold;
     background-color: $color-soft-red;
@@ -100,7 +100,7 @@
     transition-duration: $time-transition-normal;
 
     &:hover {
-      padding: 10px;
+      padding: 12px;
       background-color: $color-white;
       color: $color-soft-red;
       border: 2px solid $color-soft-red;

@@ -3,6 +3,8 @@
  */
 
 import React from "react";
+import Header from "./header";
+import HeroSection from "./hero-section";
 import FeaturesSection from "./features-section";
 import DownloadSection from "./download-section";
 import FaqSection from "./faq-section";
@@ -16,6 +18,8 @@ const App = () => {
 
   return (
     <main className={`main ${darkMode && "main--dark"}`}>
+      <Header dark={darkMode} toggleDark={toggleDarkMode} />
+      <HeroSection />
       <FeaturesSection />
       <DownloadSection />
       <FaqSection />

@@ -18,6 +18,7 @@
     background-color: $color-soft-blue;
     border-radius: 0px 50% 50% 0px;
     z-index: 0;
+    transition: $time-transition-normal;
 
     @media #{$screen-medium} {
       bottom: 10%;

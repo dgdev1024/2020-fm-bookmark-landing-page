@@ -19,7 +19,7 @@ $color-soft-red: hsl(0, 94%, 66%);
 $color-grayish-blue: hsl(229, 8%, 60%);
 $color-light-grayish-blue: hsl(72, 26%, 96%);
 $color-very-dark-blue: hsl(229, 31%, 21%);
-$color-very-dark-blue-transparent: hsla(229, 31%, 21%, 0.8);
+$color-very-dark-blue-transparent: hsla(229, 31%, 21%, 0.9);
 $color-white: hsl(0, 0%, 100%);
 $color-black: hsl(0, 0%, 0%);
 
@@ -28,6 +28,7 @@ $color-background-light: hsl(0, 0%, 100%);
 $color-button-default-background-light: hsl(72, 26%, 96%);
 $color-heading-light: hsl(229, 31%, 21%);
 $color-text-light: hsl(229, 8%, 60%);
+$color-header-light: hsla(0, 0%, 100%, 0.8);
 
 // Dark Mode Color Variables
 $color-background-dark: hsl(0, 0%, 0%);
@@ -35,6 +36,7 @@ $color-background-two-dark: hsl(0, 0%, 10%);
 $color-button-default-background-dark: hsl(72, 26%, 4%);
 $color-heading-dark: hsl(229, 31%, 79%);
 $color-text-dark: hsl(229, 8%, 40%);
+$color-header-dark: hsla(0, 0%, 0%, 0.8);
 
 // Social Media Color Variables
 $color-facebook-blue: hsl(221, 44%, 41%);
@@ -48,4 +50,4 @@ $logo-height-scale: 148 / 25;
 }
 
 // Transition Variables
-$time-transition-normal: 0.25s;
+$time-transition-normal: 0.3s;

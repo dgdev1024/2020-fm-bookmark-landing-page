@@ -7,6 +7,7 @@
   font-family: $font-family-normal;
   font-size: $font-size-normal;
   font-weight: $font-weight-normal;
+  transition: $time-transition-normal;
 }
 
 .container {
@@ -30,6 +31,7 @@
   color: $color-heading-light;
   line-height: 1.2em;
   text-align: center;
+  transition: $time-transition-normal;
 
   @media #{$screen-medium} {
     text-align: left;
@@ -37,6 +39,18 @@
 
   &--large {
     font-size: 2em;
+
+    @media #{$screen-medium} {
+      font-size: 2.25em;
+    }
+
+    @media #{$screen-large} {
+      font-size: 2.5em;
+    }
+
+    @media #{$screen-extra-large} {
+      font-size: 2.75em;
+    }
   }
 
   &--small {
@@ -83,6 +97,7 @@
   color: $color-text-light;
   line-height: 1.7em;
   text-align: center;
+  transition: $time-transition-normal;
 
   @media #{$screen-medium} {
     text-align: left;
@@ -151,6 +166,11 @@
 
   &--light-dark {
     background-color: $color-button-default-background-light;
+
+    &:hover {
+      background-color: $color-heading-light;
+      color: $color-button-default-background-light;
+    }
   }
 }
 
@@ -211,7 +231,7 @@
   }
 
   .button {
-    color: $color-heading-dark;
+    color: $color-white;
 
     &--blue {
       background-color: $color-very-dark-blue;
@@ -225,6 +245,11 @@
 
     &--light-dark {
       background-color: $color-button-default-background-dark;
+
+      &:hover {
+        background-color: $color-heading-dark;
+        color: $color-button-default-background-dark;
+      }
     }
   }
 
