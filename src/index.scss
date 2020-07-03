@@ -51,6 +51,18 @@
     }
   }
 
+  &--smaller {
+    font-size: 1em;
+
+    @media #{$screen-medium} {
+      font-size: 1.15em;
+    }
+
+    @media #{$screen-large} {
+      font-size: 1.3em;
+    }
+  }
+
   &--left {
     text-align: left;
   }
@@ -106,8 +118,11 @@
   color: $color-heading-light;
   border: none;
   border-radius: 4px;
+  transition-property: color, background-color;
+  transition-duration: $time-transition-normal;
 
   &:hover {
+    padding: 14px;
     cursor: pointer;
   }
 
@@ -117,11 +132,21 @@
 
   &--low-padding {
     padding: 4px;
+
+    &:hover {
+      padding: 2px;
+    }
   }
 
   &--blue {
     background-color: $color-soft-blue;
     color: $color-light-grayish-blue;
+
+    &:hover {
+      background-color: $color-light-grayish-blue;
+      color: $color-soft-blue;
+      border: 2px solid $color-soft-blue;
+    }
   }
 
   &--light-dark {

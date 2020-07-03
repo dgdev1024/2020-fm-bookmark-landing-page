@@ -6,7 +6,7 @@ export default [
   {
     question: "What is Bookmark?",
     answer:
-      "Bookmark gives Internet users a central place to save their bookmarked webpages so that they can access them on any browser and device they wish.",
+      "Bookmark gives Internet users a central place to save their bookmarked webpages so that they can access them on any browser they wish.",
   },
   {
     question: "How can I request a new browser?",
