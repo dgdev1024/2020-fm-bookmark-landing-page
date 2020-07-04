@@ -53,7 +53,7 @@ const CtaSection = () => {
             />
             <p className="cta__input-error">{error}</p>
           </div>
-          <button type="sumbit" className="button cta__submit-button">
+          <button type="submit" className="button cta__submit-button">
             Contact us
           </button>
         </form>
